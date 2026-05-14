@@ -1,0 +1,41 @@
+name: Publish to PyPI
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    name: Build and publish Python package
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/buywhere/
+    permissions:
+      id-token: write  # Required for Trusted Publisher (OIDC)
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install build tools
+        run: pip install build twine
+
+      - name: Build distribution
+        run: python -m build
+
+      - name: Check distribution
+        run: twine check dist/*
+
+      - name: Publish to PyPI (Trusted Publisher)
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          # Uses OIDC Trusted Publisher — no PYPI_TOKEN secret required once configured on PyPI.
+          # Fallback: set PYPI_TOKEN secret and uncomment the next line:
+          # password: ${{ secrets.PYPI_TOKEN }}
+          skip-existing: false
+          verbose: true
