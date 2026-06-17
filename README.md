@@ -1,5 +1,9 @@
 # BuyWhere Python SDK
 
+<p align="left">
+  <a href="https://buywhere.ai/api-keys"><img src="https://img.shields.io/badge/🔑_Get_your_free_API_key-60_seconds-4f46e5?style=for-the-badge" alt="Get your free API key"></a>
+</p>
+
 Official Python SDK for the [BuyWhere](https://buywhere.io) Product Catalog API — the agent-native product search API for Singapore.
 
 ## Installation
@@ -149,6 +153,10 @@ print(result)
 #    Platform: shopee | Merchant: Sony Official Store
 #    ...
 ```
+
+## Get your API key
+
+Sign up free at <https://buywhere.ai/api-keys> — 60 seconds, no credit card.
 
 ## Requirements
 
