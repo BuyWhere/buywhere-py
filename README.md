@@ -1,6 +1,10 @@
 # BuyWhere Python SDK
 
 <p align="left">
+  <a href="https://pypi.org/project/buywhere/"><img src="https://img.shields.io/pypi/v/buywhere?color=4f46e5&label=PyPI" alt="PyPI"></a>
+  <a href="https://pypi.org/project/buywhere/"><img src="https://img.shields.io/pypi/pyversions/buywhere?color=4f46e5" alt="Python versions"></a>
+  <a href="https://github.com/BuyWhere/buywhere-py/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/buywhere?color=4f46e5" alt="License"></a>
+  <a href="https://github.com/BuyWhere/buywhere-py"><img src="https://img.shields.io/badge/source-github-4f46e5" alt="Source"></a>
   <a href="https://buywhere.ai/api-keys"><img src="https://img.shields.io/badge/🔑_Get_your_free_API_key-60_seconds-4f46e5?style=for-the-badge" alt="Get your free API key"></a>
 </p>
 
